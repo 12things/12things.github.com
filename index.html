@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <div class="container" itemscope itemtype="http://schema.org/Organization" id="12things">
+    <div class="container" itemscope itemtype="http://schema.org/Organization" id="org">
       <div class="page-header">
         <h1><img src="./assets/img/12.png" width="50px" /> Things</h1>
       </div>
@@ -57,7 +57,7 @@
         <li class="span3" itemscope itemtype="http://schema.org/WebPage">
           <div class="thumbnail">
             <meta content="ich mach rot" itemprop="name" />
-            <meta itemprop="author" itemref="12things" />
+            <meta itemprop="author" itemscope itemtype="http://schema.org/Organization" itemref="org" />
             <img src="./assets/img/ichmagrot.jpg" alt="ichmagrot screenshot" itemprop="image" />
             <p itemprop="description">Online friend books like the ones from school</p>
             <p><a class="btn" href="http://ichmagrot.de">visit &raquo;</a></p>
@@ -66,7 +66,7 @@
         <li class="span3" itemscope itemtype="http://schema.org/WebPage">
           <div class="thumbnail">
             <meta content="sortitout" itemprop="name" />
-            <meta itemprop="author" itemref="12things" />
+            <meta itemprop="author" itemscope itemtype="http://schema.org/Organization" itemref="org" />
             <img src="./assets/img/sortitout.jpg" alt="sortitout screenshot" itemprop="image" />
             <p itemprop="description">Simple brainstorming tool for individuals or small groups</p>
             <p><a class="btn" href="http://sortitout.de">visit &raquo;</a> <a class="btn" href="#"><i class="icon-github-sign"></i> fork it</a></p>
