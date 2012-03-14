@@ -57,7 +57,7 @@
         <li class="span3" itemscope itemtype="http://schema.org/WebPage">
           <div class="thumbnail">
             <meta content="ich mach rot" itemprop="name" />
-            <span itemprop="author" itemref="org"></span>
+            <meta itemprop="author" itemref="org" itemscope itemtype="http://schema.org/Organization" />
             <img src="./assets/img/ichmagrot.jpg" alt="ichmagrot screenshot" itemprop="image" />
             <p itemprop="description">Online friend books like the ones from school</p>
             <p><a class="btn" href="http://ichmagrot.de">visit &raquo;</a></p>
@@ -66,7 +66,7 @@
         <li class="span3" itemscope itemtype="http://schema.org/WebPage">
           <div class="thumbnail">
             <meta content="sortitout" itemprop="name" />
-            <span itemprop="author" itemref="org"></span>
+            <meta itemprop="author" itemref="org" itemscope itemtype="http://schema.org/Organization" />
             <img src="./assets/img/sortitout.jpg" alt="sortitout screenshot" itemprop="image" />
             <p itemprop="description">Simple brainstorming tool for individuals or small groups</p>
             <p><a class="btn" href="http://sortitout.de">visit &raquo;</a> <a class="btn" href="#"><i class="icon-github-sign"></i> fork it</a></p>
@@ -86,8 +86,8 @@
 
       <hr>
 
-      <footer id="org">
-        <p itemscope itemtype="http://schema.org/Organization">&copy; <a href="http://12things.de" itemprop="url"><span itemprop="name">12Things</span></a> 2012</p>
+      <footer itemscope itemtype="http://schema.org/Organization">
+        <p id="org">&copy; <a href="http://12things.de" itemprop="url"><span itemprop="name">12Things</span></a> 2012</p>
       </footer>
 
     </div> <!-- /container -->
