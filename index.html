@@ -9,8 +9,8 @@
 
     <!-- Le styles -->
 
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="./assets/css/font-awesome.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="./assets/css/font-awesome.css" rel="stylesheet" />
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -26,10 +26,23 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="page-header">
-        <h1><img src="./assets/img/12.png" width="50px" /> Things</h1>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">12things</a>
+          <ul class="nav">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#ideas">Ideas</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+
+    <div class="container">
+      <!--div class="page-header">
+        <h1><img src="./assets/img/12.png" width="50px" /> Things</h1>
+      </div-->
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
@@ -37,12 +50,15 @@
         <h1>clean, lean and easy to use</h1>
         <p>12things is a project of Hannes Schippmann and Matthias Pfefferle. The goal of the project is to 
           create simple software that don't make you think!</p>
-        <p><a class="btn btn-large" href="https://github.com/12things"><i class="icon-github-sign icon-large"></i> fork us</a></p>
+        <p><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=12sites&amp;type=follow"
+            allowtransparency="true" frameborder="0" scrolling="0" width="132px" height="20px"></iframe>
+
+        </p>
 
       </div>
       
       <div class="page-header">
-        <h1>Projects</h1>
+        <h1 id="projects">Projects</h1>
       </div>
       
       <ul class="thumbnails">
@@ -50,7 +66,8 @@
           <div class="thumbnail">
             <meta content="12Sites" itemprop="name" />
             <img src="./assets/img/12sites.jpg" alt="12sites screenshot" itemprop="image" />
-            <p itemprop="description">Dead easy tool for creating a professional business website <span class="label label-info">a project by Hannes Schippmann</span></p>
+            <p itemprop="description">Dead easy tool for creating a professional business website. <span class="label label-info">A project by Hannes Schippmann.</span></p>
+            <p><a href="https://twitter.com/12sites" class="twitter-follow-button" data-show-count="false">Follow @12sites</a></p>
             <p><a class="btn" href="http://12sites.de">visit &raquo;</a></p>
           </div>
         </li>
@@ -59,7 +76,7 @@
             <meta content="ich mach rot" itemprop="name" />
             <meta itemprop="author" itemref="org" itemscope itemtype="http://schema.org/Organization" />
             <img src="./assets/img/ichmagrot.jpg" alt="ichmagrot screenshot" itemprop="image" />
-            <p itemprop="description">Online friend books like the ones from school</p>
+            <p itemprop="description">Online friend books like the ones from school.</p>
             <p><a class="btn" href="http://ichmagrot.de">visit &raquo;</a></p>
           </div>
         </li>
@@ -68,8 +85,11 @@
             <meta content="sortitout" itemprop="name" />
             <meta itemprop="author" itemref="org" itemscope itemtype="http://schema.org/Organization" />
             <img src="./assets/img/sortitout.jpg" alt="sortitout screenshot" itemprop="image" />
-            <p itemprop="description">Simple brainstorming tool for individuals or small groups</p>
-            <p><a class="btn" href="http://sortitout.de">visit &raquo;</a> <a class="btn" href="https://github.com/12things/sortitout"><i class="icon-github-sign"></i> fork it</a></p>
+            <p itemprop="description">Simple brainstorming tool for individuals or small groups.</p>
+            <p><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=12things&amp;repo=sortitout&amp;type=watch&amp;count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe> <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=12things&amp;repo=sortitout&amp;type=fork&amp;count=true"
+                  allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></p>
+            <p><a class="btn" href="http://sortitout.de">visit &raquo;</a></p>
           </div>
         </li>
         <li class="span3">
@@ -81,13 +101,42 @@
       </ul>
       
       <div class="page-header">
-        <h1>Ideas</h1>
+        <h1 id="ideas">Ideas</h1>
+      </div>
+      
+      <div class="row">
+        <div class="span6">
+          <h2>Human Markup</h2>
+          <p>Actually there is no easy way for non-techies to mark up text on the internet. HTML and Mark-Down are too 
+          geeky and WYSIWYG-Editors are producing hacky code. With Human Markup we want to define some rules to mark up
+          a normal text only by interpreting punctuation marks, paragraphs and apostrophes. If you want to join us,
+          please visit our <a href="https://github.com/12things/human-markup/wiki">wiki on Github</a>.</p>
+          <p><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=12things&amp;repo=human-markup&amp;type=watch&amp;count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe></p>
+        </div>
       </div>
       
       <div class="page-header">
-        <h1>Team</h1>
+        <h1 id="team">Team</h1>
       </div>
-
+      
+      <div class="row">
+        <div class="span5">
+          <h2>Hannes Schippmann</h2>
+          <img class="" src="./assets/img/hannes.jpg" style="float: right;">
+          <p></p>
+          <p><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=butschi&amp;type=follow&amp;count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="132px" height="20px"></iframe> <a href="https://twitter.com/butschi" class="twitter-follow-button" data-show-count="false">Follow @butschi</a></p>
+        </div>
+        <div class="span2">&nbsp;</div>
+        <div class="span5">
+          <h2>Matthias Pfefferle</h2>
+          <p></p>
+          <p><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=pfefferle&amp;type=follow&amp;count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="132px" height="20px"></iframe><a href="https://twitter.com/pfefferle" class="twitter-follow-button" data-show-count="false">Follow @pfefferle</a></p>
+        </div>
+      </div>
+    
       <hr>
 
       <footer itemscope itemtype="http://schema.org/Organization">
@@ -115,6 +164,7 @@
     <script src="./assets/js/bootstrap-carousel.js"></script>
 
     <script src="./assets/js/bootstrap-typeahead.js"></script>
-
+    
+    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
   </body>
 </html>
